@@ -1,0 +1,3 @@
+[submodule "loriot-public"]
+	path = loriot-public
+	url = git@bitbucket.org:loriot/loriot-python-library.git

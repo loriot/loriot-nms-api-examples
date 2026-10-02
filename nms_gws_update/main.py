@@ -1,3 +1,4 @@
+# Creator: LORIOT AG
 # Copyright 2026 Loriot
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,7 +18,7 @@ import sys
 import logging
 import concurrent.futures
 import argparse
-from nms_utils.loriot import getRequest, postRequest, getResourcesFromPages, loginAdme, putRequest
+from loriot import getRequest, postRequest, putRequest, getResourcesFromPages, loginAdme
 
 # Configure logging with timestamps
 logging.basicConfig(

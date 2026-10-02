@@ -1,3 +1,5 @@
+<!-- Creator: LORIOT AG -->
+
 # Loriot API Implementation Example
 
 This repository contains example Python scripts demonstrating how to interact with the [Loriot.io](https://loriot.io) Network Server API.
@@ -7,7 +9,7 @@ The main example in this repository lives in the `nms_gws_update` folder. A dedi
 ## Repository Layout
 
 * `nms_gws_update/` - Example script for updating connected gateways running the LOIROT gateway bin. See the folder-level README for usage instructions.
-* `nms_utils/` - Shared helper modules used by the examples.
+* `loriot-public/` - Git submodule: the public [LORIOT Python library](https://bitbucket.org/loriot/loriot-python-library) (`loriot` package) used by the examples.
 
 > **Disclaimer:** This repository is provided to share an implementation example. **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.** It is not an officially supported Loriot product.
 
@@ -18,9 +20,23 @@ The main example in this repository lives in the `nms_gws_update` folder. A dedi
 
 ## Setup Instructions
 
-1. **Clone the repository:**
+1. **Clone the repository together with the library submodule:**
    ```bash
-   git clone [https://github.com/yourusername/loriot-api-examples.git](https://github.com/yourusername/loriot-api-examples.git)
+   git clone --recurse-submodules <repository-url> loriot-api-examples
    cd loriot-api-examples
+   # in an existing clone:
+   git submodule update --init
+   ```
 
+2. **Create a virtual environment and install the library:**
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate        # Windows: .venv\Scripts\activate
+   pip install -r nms_gws_update/requirements.txt   # run from the repository root
+   ```
 
+3. **Run an example:** see the folder-level README, e.g. `nms_gws_update/README.md`.
+
+## License
+
+Apache License, Version 2.0. See [LICENSE](LICENSE).
