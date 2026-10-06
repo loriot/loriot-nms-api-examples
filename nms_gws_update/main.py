@@ -131,7 +131,8 @@ if __name__ == "__main__":
                 update_tasks.append((customerObj['server'], account, network, gw, session))
 
     # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    max_concurrent_threads = 10
+    max_concurrent_threads = 1
+
     has_errors = False
     logger.info(f"🧵 [MAIN] Starting parallel updates for {len(update_tasks)} gateways... (Max threads: {max_concurrent_threads})")
 
