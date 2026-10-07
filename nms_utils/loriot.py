@@ -1,4 +1,4 @@
-# Copyright 2026 Loriot AG
+# Copyright 2026 LORIOT AG
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -136,7 +136,7 @@ def getResourcesFromPages(customerObj, session, api, apiFieldName):
         print(customerObj['server'] + ": 0 resources retrieved")
         return resources
 
-    # Record Page 1 no extra actions required
+    # Record page 1; no extra actions required
     if apiFieldName in data:
         resources.extend(data[apiFieldName])
 
@@ -144,7 +144,7 @@ def getResourcesFromPages(customerObj, session, api, apiFieldName):
     perPage = data.get('perPage',10) # Default to 10 if not provided to avoid issues with LNS v7
     total_pages = math.ceil(total / perPage) if perPage > 0 else 1
 
-    # only one page
+    # Only one page
     if total_pages <= 1:
         return resources
 
@@ -158,7 +158,7 @@ def getResourcesFromPages(customerObj, session, api, apiFieldName):
             for page in pages_to_fetch
         }
 
-        # As each thread completes, extend the main accounts list
+        # As each thread completes, extend the main resources list
         for future in concurrent.futures.as_completed(futures):
             try:
                 page_resources = future.result()

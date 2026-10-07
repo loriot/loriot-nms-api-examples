@@ -1,4 +1,4 @@
-# Copyright 2026 Loriot
+# Copyright 2026 LORIOT
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ def update_gateway(server, account, network, gw, session):
     postRequest(server, "{}", f"/1/nwk/gateway/{gw}/restart", session)
     logger.info(f"🔄 [UPDATE] [{gw}] Restart command sent")
 
-    # 3. Wait until GW is available again: Retry each 15s max 5 times
+    # 3. Wait until the GW is available again: retry every 5s, up to 5 times
     max_retries = 5
     retry_interval = 5
     is_connected = False
@@ -65,11 +65,11 @@ def update_gateway(server, account, network, gw, session):
 
 def create_parser():
     parser = argparse.ArgumentParser(
-        description="Update and restart gateways in parallel via Loriot API"
+        description="Update and restart gateways in parallel via LORIOT API"
     )
-    parser.add_argument("--server", required=True, help="Loriot server URL")
-    parser.add_argument("--user", required=True, help="Username for Loriot")
-    parser.add_argument("--password", required=True, help="Password for Loriot")
+    parser.add_argument("--server", required=True, help="LORIOT server URL")
+    parser.add_argument("--user", required=True, help="Username for LORIOT")
+    parser.add_argument("--password", required=True, help="Password for LORIOT")
     return parser
 
 

@@ -10,7 +10,7 @@ Official documentation links:
 
 ## Disclaimer
 
-Software is delivered with no guaranty. It is only an example of implementation.
+The software is delivered without any guarantee. It is only an example implementation.
 
 ## Usage
 
