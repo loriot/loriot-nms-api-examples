@@ -1,3 +1,5 @@
+<!-- Creator: LORIOT AG -->
+
 # LORIOT Network Management System: Update LORIOT gw bin
 
 This software is an example implementation of the loriot.io NMS API.

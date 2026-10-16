@@ -1,5 +1,3 @@
--e ..
-colorama
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
+# Creator: LORIOT AG
+# Install from the repository root: pip install -r nms_gws_update/requirements.txt
+./loriot-public
