@@ -9,7 +9,7 @@ The main example in this repository lives in the `nms_gws_update` folder. A dedi
 ## Repository Layout
 
 * `nms_gws_update/` - Example script for updating connected gateways running the LORIOT gateway binary. See the folder-level README for usage instructions.
-* `loriot-public/` - Git submodule: the public [LORIOT Python library](https://bitbucket.org/loriot/loriot-python-library) (`loriot` package) used by the examples.
+* `loriot-public/` - Git submodule: the public [LORIOT Python library](https://github.com/loriot/loriot-python-library) (`loriot` package) used by the examples.
 
 > **Disclaimer:** This repository is provided to share an implementation example. **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.** It is not an officially supported LORIOT product.
 

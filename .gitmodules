@@ -1,4 +1,4 @@
 [submodule "loriot-public"]
 	path = loriot-public
-	url = git@bitbucket.org:loriot/loriot-python-library.git
-	branch = initial-release
+	url = https://github.com/loriot/loriot-python-library.git
+	branch = main
